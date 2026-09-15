@@ -154,7 +154,7 @@ async function manipularLoginGoogle(googleResponse){
 
     }catch(error){
         console.log("erro ao logar com o google ", error);
-        console.log(emailConta)
+        //console.log(emailConta)
     }
 }
 
