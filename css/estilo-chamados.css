@@ -1,0 +1,460 @@
+@import "estilo-abrir-chamado-2.css";
+@import "estilo-detalhe-chamado.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans VF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+body{
+    
+    background: #1B2340;
+    color: #fff;
+}
+
+
+
+
+/*PARTE DO MENU*/
+.cabecalho{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1B2340;
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 5px #00000025;
+    
+    
+}
+
+.cabecalho img{
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.cabecalho-menu{
+    display: flex;
+    margin-right: 30px;
+}
+
+.cabecalho-menu button{
+    width: 20vh;
+    height: 50px;
+    gap: 30px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgb(186, 186, 186);
+    background-color: transparent;
+}
+
+.cabecalho-menu-item:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.cabecalho-menu button.active{
+    background-color: rgb(15, 15, 174);
+    color: #fff;
+}
+
+
+/*main*/
+.corpo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 205vh;
+}
+
+.filtro{
+   margin-top: 50px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 10px;
+   border-radius: 15px;
+   width: 199vh;
+   height: 60px;
+   background-color: #222B4C;
+}
+
+.barra-pesquisa-btn{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 65%;
+}
+
+.barra-pesquisa-btn input.pesquisa{
+    width: 80%;
+    height: 100%;
+    margin-left: 10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border: none;
+    padding-left: 15px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #1B2340;
+}
+
+.barra-pesquisa-btn input.pesquisa:focus{
+    outline: none;
+    border-top: 2px solid rgb(15, 15, 174);
+    border-bottom: 2px solid rgb(15, 15, 174);
+    border-left: 2px solid rgb(15, 15, 174);
+}
+
+.barra-pesquisa-btn input.btn-pesquisa{
+    width: 80px;
+    height: 100%;
+    border-end-end-radius: 15px;
+    border-top-right-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #fff;
+    background-color: rgb(15, 15, 174);
+}
+
+.barra-pesquisa-btn input.btn-pesquisa:hover{
+    background-color: #1941e2;
+
+}
+
+
+
+.status{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 50%;
+    height: 30px;
+}
+
+.status p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.status ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 13px;
+}
+
+.btn-status{
+    width: 130px;
+    height: 35px;
+    border: none;
+    border-radius: 15px;
+    font-weight: 600;
+    color: rgb(186, 186, 186);
+    background-color: #1B2340;
+}
+
+.btn-status:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(15, 15, 174);
+}
+
+
+/*container dos chamados*/
+.container{
+    margin-top: 20px;
+    width: 200vh;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+    gap: 15px;
+    /*background-color: red;*/
+}
+
+/*chamado*/
+.chamados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 15px;
+    border: 1px solid #334155;
+    width: 65vh;
+    height: 60vh;
+    background-color: #222B4C;
+
+}
+
+.chamados:hover{
+    cursor: pointer;
+    background-color: #323c62;
+    border: 1px solid rgb(15, 15, 174);
+}
+
+.chamados h3{
+    font-size: 25px;
+}
+.chamados:hover h3{
+    color: rgb(99, 99, 209);
+}
+
+.comeco-chamado{
+    display: flex;
+    justify-content:space-around ;
+    padding: 5px;
+    width: 100%;
+    /*background-color: green;*/
+}
+
+.comeco-chamado p.id-chamado{
+    height: 30px;
+    width: 20%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #A5B4FC;
+    border: 1px solid rgba(67, 56, 202, 0.6);
+    background-color: rgba(49, 46, 129, 0.6);
+}
+
+.comeco-chamado p.categoria-chamado{
+    height: 30px;
+    width: 50%;
+    border-radius: 6px;
+    text-align: center;
+    padding: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fde910 ;
+    border: 1px solid rgba(195, 202, 56, 0.6);
+    background-color: rgba(131, 135, 101, 0.6);
+}
+
+.meio-chamado{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    padding-left: 15px;
+    gap: 10px;
+    width: 100%;
+    height: 45vh;
+    /*background-color: blue;*/
+}
+
+.meio-chamado p.descricao-chamado{
+    font-size: 20px;
+    color: rgb(205, 205, 205);
+}
+
+#container-imagem{
+    width: 430px;
+    height: 430px;
+    margin-top: 10px;
+    /*background-color: red;*/
+}
+
+#imagem-chamado{
+    width: 100%;
+}
+
+#solucao{
+    width: 50%;
+    height: 60px;
+    background-color: red;
+}
+
+.linha{
+    margin-top: 15px;
+    text-align: center;
+    width: 95%;
+}
+
+
+.final-chamado{
+    margin-top: 10px;
+    font-size: 15px;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    /*background-color: tomato;*/
+}
+
+.final-chamado button#detalhes{
+    height: 28px;
+    width: 85px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid #334155;
+    color: rgb(203, 203, 203);
+    background-color: #1B2340;
+}
+
+.final-chamado button#detalhes:hover{
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #334155;
+    background-color: #222B4C;
+}
+
+#paginacao{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    width: 75vh;
+    height: 10vh;
+    font-size: 20px;
+    font-weight: bold;
+    /*background-color: red;*/
+}
+
+#paginacao button#btn-anterior, button#btn-proximo{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #334155;
+    color: #fff;
+    background-color: #222B4C;
+}
+
+/*mensagem de acesso negado
+.acesso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 120vh;
+    height: 50vh;
+    padding-top: 90px;
+    border-radius: 15px;
+    border: 1px solid #ff0000;
+    background-color: #222B4C;
+}
+
+.acesso h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.acesso p{
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.icone-vermelho {
+  stroke: #dc2626;
+  width: 40vh;
+  height: 10vh;
+}*/
+
+/*Responsividade*/
+@media screen and (max-width: 1000px){
+    .cabecalho{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cabecalho-menu{
+        width: 100%;
+        top: 10px;
+        right: 0;
+        /*
+        transform: translateX(100%);
+        transition: 0.4s;
+        */
+        
+    }
+
+    .cabecalho-menu a{
+        margin-left: 70%;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .cabecalho-menu a#premium, a#entrar, a#barra{
+        display: none;
+    }
+
+    /*
+    .cabecalho-menu a#barra{
+    transform: rotate(90deg);
+    cursor: text;
+    }
+
+    .cabecalho-menu a#entrar{
+        color: #919496;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .cabecalho-menu a#entrar:hover{
+        color: #1ed760;
+    }*/
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /*main*/
+    .corpo{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 30%;
+    width: 200vh;
+    }
+
+    .filtro{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: teal;
+    width:60vh;
+    }
+
+    .status{
+    display: flex;
+    justify-content: center;
+    background-color: turquoise;
+    width: 100%;
+    font-weight: 600;
+    font-size: 13px;
+    }
+
+    .status p{
+    margin-left: 10px;
+    }
+
+    .status ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 13px;
+    }
+
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 30vh;
+    }
+
+
+}
+

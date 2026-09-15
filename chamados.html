@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-chamados.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+            
+            <script>
+                const email = localStorage.getItem('email');
+                const cabecalho = document.querySelector('.cabecalho');
+                cabecalho.innerHTML = ''; //limpou o header
+                const itemCabecalho = document.createElement('nav');
+                itemCabecalho.classList.add('cabecalho-menu');
+
+                if(email == "pedro.conceicao@icom.com.br"){
+                    console.log("oi")
+                    
+
+                    cabecalho.innerHTML += `
+                        <img src="img/Logo do Helpdesk do Grupo Icom.png">
+                        <nav class="cabecalho-menu">
+                            <button onclick="mostrarFormChamado()" id="openChamado" class="cabecalho-menu-item">Abrir chamado</button>
+                            <button onclick="mostrarTodosChamados()" class="cabecalho-menu-item">Todos os chamados</button>
+                            <button onclick="exibirMeusChamados()" id="meusChamados" class="cabecalho-menu-item">Meus chamados</button>
+                            <button onclick="logout()" id="entrar" class="cabecalho-menu-item">Sair</button>
+                        </nav>
+                    
+                    `;
+
+                }else{
+                    cabecalho.innerHTML = `
+                    <a href="#"><img src="img/Logo do Helpdesk do Grupo Icom.png"></a>
+                        <nav class="cabecalho-menu">
+                            <button onclick="mostrarFormChamado()" id="openChamado" class="cabecalho-menu-item">Abrir chamado</button>
+                            <button onclick="exibirMeusChamados()" id="meusChamados" class="cabecalho-menu-item">Meus chamados</button>
+                            <button onclick="logout()" id="entrar" class="cabecalho-menu-item">Sair</button>
+                        </nav>
+                    `;
+                }
+                
+            </script>
+
+        <!--
+        <div class="burguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>-->
+    </header>
+
+    <main class="corpo">
+
+        <!--SESSÃO PARA ABRIR CHAMADO-->
+        <section id="novo-chamado" style="display: block;">
+            <div class="box">
+                <div class="chamado">
+                    <form action="" id="formChamado" enctype="multipart/form-data" method="post">   
+                        <h1>Solicite o seu atendimento</h1>
+                        <div class="input-container">
+                            <input type="text" name="nome" id="titulo_chamado" placeholder=" " required>
+                            <label for="nome">Título do chamado</label>
+                        </div>
+
+                        <div class="input-container">
+                            
+                            <input type="email" id="email_solicitante" placeholder=" " value="" disabled>
+                            <label for="email">Seu e-mail</label>
+                        </div>
+
+                        
+                        <div class="input-container">
+                            <select name="setor" id="setor_solicitante" required>
+                                <option value="" disabled selected hidden class="primeira"></option>
+                                <option value="Agencia">AGÊNCIA</option>
+                                <option value="Arquitetura">ARQUITETURA</option>
+                                <option value="Comercial">COMERCIAL</option>
+                                <option value="Compras">COMPRAS</option>
+                                <option value="Diretoria">DIRETORIA</option>
+                                <option value="Eventos">EVENTOS</option>
+                                <option value="Financeiro">FINANCEIRO</option>
+                                <option value="Infinity">INFINITY</option>
+                                <option value="Marketing">MARKETING</option>
+                                <option value="One">ONE</option>
+                                <option value="Operacional">OPERACIONAL</option>
+                                <option value="Parcerias">PARCERIAS</option>
+                                <option value="Retencao">RETENÇÃO</option>
+                                <option value="RH">RH</option>
+                                <option value="Select">SELECT</option>
+                                <option value="Select Alinhadores">SELECT ALINHADORES</option>
+                                <option value="Select Club">SELECT CLUB</option>
+                                <option value="Solucoes">SOLUÇÕES</option>
+                                <option value="Sucessodonto">SUCESSODONTO</option>
+                                <option value="TI">T.I</option>
+                                <option value="TV">TV</option>
+                                <option value="Criacao">CRIAÇÃO</option>
+                                <option value="Mentores">MENTORES</option>
+                                <option value="Solucoes">SOLUÇÕES</option>
+                            </select>
+                            <label for="setor" class="setor">Selecione o seu setor</label>
+                        </div>
+
+                        <div class="input-categoria">
+                            <button type="button" class="btn-categoria" data-value="Admissão">Admissão</button>
+                            <button type="button" class="btn-categoria" data-value="Domínios">Domínios</button>
+                            <button type="button" class="btn-categoria" data-value="Driver">Driver</button>
+                            <button type="button" class="btn-categoria" data-value="Email">E-mail</button>
+                            <button type="button" class="btn-categoria" data-value="Firewall">Firewall</button>
+                            <button type="button" class="btn-categoria" data-value="Gestão">Gestão</button>
+                            <button type="button" class="btn-categoria" data-value="Instalação">Instalação</button>
+                            <button type="button" class="btn-categoria" data-value="Liberação de acessos">Liberação de acesso(s)</button>
+                            <button type="button" class="btn-categoria" data-value="Slack">Slack</button>
+                            <button type="button" class="btn-categoria" data-value="Suporte para automação">Suporte para automação</button>
+                            <button type="button" class="btn-categoria" data-value="Suporte para celular">Suporte para celular</button>
+                            <button type="button" class="btn-categoria" data-value="Suporte para computador">Suporte para computador</button>
+                            <button type="button" class="btn-categoria" data-value="Suporte para impressora">Suporte para impressora</button>
+                            <button type="button" class="btn-categoria" data-value="Suporte para appSheet">Suporte para o AppSheet</button>
+                            <button type="button" class="btn-categoria" data-value="Suporte para o B.I">Suporte para o B.I</button>
+                            <button type="button" class="btn-categoria" data-value="Suspensão">Suspensão</button> 
+                        </div>
+
+                        <input type="hidden" name="categoria_selecionada" id="categoria_selecionada" value="">
+
+
+                        <div class="input-container">
+                            <textarea name="campo-descricao" id="descricao" placeholder=" " maxlength="550" required></textarea>
+                            <label for="campo-descricao" id="area">Descreva sua solicitação</label>
+                        </div>
+
+
+                        <div class="input-container-img">
+                            <label for="img-chamado" id="label-img">Print/Imagem do problema</label>
+                            <input type="file" name="img_chamado" id="img_chamado">
+                        
+
+                        <button type="submit" id="enviar-chamado">Enviar</button>
+                    
+                    </form>
+                </div>
+            </div><!--final div box-->
+
+        </section><!--final section novo-chamado-->
+
+        <!--SESSÃO TODOS OS CHAMADOS-->
+        <section id="todos-chamados" style="display: none;">
+            <!--FILTRO-->
+            <div class="filtro">
+                <div class="barra-pesquisa-btn">
+                    <input type="text" placeholder="filtrar por solicitante ou título" class="pesquisa">     
+                    <input type="submit" value="Filtrar" class="btn-pesquisa" onclick="pesquisar()">
+                </div>
+                           
+                <div class="status">
+                        <p>Status:</p>
+                        <ul>
+                            <li><button class="btn-status" data-value="todos" onclick="exibirChamadosNoFiltro()">Todos</button></li>                            
+                            <li><button class="btn-status" data-value="Aberto" onclick="exibirChamadosPorStatus()" id="chamadosAbertos">Abertos</button></li>                            
+                            <li><button class="btn-status" data-value="Resolvido" onclick="exibirChamadosPorStatus()">Resolvidos</button></li>                            
+                            <li><button class="btn-status" data-value="Cancelado" onclick="exibirChamadosPorStatus()">Cancelados</button></li>    
+                            <input type="hidden" name="" class="inputValueStatus"> <!--INPUT QUE ARMAZENA O VALOR DOS BOTÕES QUANDO FOREM CLICADOS-->                    
+                        </ul>
+                </div>
+            </div><!--final filtro-->
+
+
+            <!--CHAMADOS-->
+            <fieldset class="container">
+                <div class="chamados">
+                    <div class="comeco-chamado">
+                        <p class="id-chamado">ID</p>
+                        <p class="categoria-chamado">Setor</p>
+                    </div>
+                    <div class="meio-chamado">
+                        <h3 class="titulo-chamado">Titulo do chamado</h3>
+                        <p class="descricao-chamado">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis cupiditate accusamus laboriosam beatae eos, 
+                            quasi doloribus ea ad rem repellendus omnis quia laborum ratione temporibus</p>
+                        <div id="container-imagem">
+                            <img id="imagem-chamado" src="" alt="imagem do chamado">
+                        </div>
+                    </div>
+                    <div class="linha">
+                        <hr style="height:0.5px;border-width:0;color:#334155;background-color:#334155">
+                    </div>
+                    <div class="final-chamado">
+                        <p>Nome solicitante</p>
+                        <p class="status-chamado ativo">Status</p>
+                        <button>Ver Detalhes</button><!--no parâmetro da function, vai o ID do chamado-->
+                    </div>
+                </div><!--final chamado-->  
+
+            </fieldset><!--final container-->
+            
+        </section><!--final sessão de todos os chamados-->
+        
+        <div id="paginacao">
+                    
+        </div>
+
+        <!--SESSÃO PARA VER DETALHES DO CHAMADO-->
+        <section id="detalhe-chamado" style="display: none;">
+            <button class="voltar" onclick="voltarPaginaChamados()">Voltar</button>
+            <fieldset class="detalhe-container">
+                <textarea class="detalhe-card">
+                    <div class="detalhe-comeco-chamado">
+                        <p class="detalhe-id-chamado">ID</p>
+                        <p class="detalhe-categoria-chamado">Categoria</p>
+                        <p class="detalhe-status-chamado">Status</p>
+                    </div>
+
+                    <h3 class="detalhe-titulo-chamado">Titulo do chamado</h3>
+
+                    <hr class="detalhe-linha" style="height:0.5px;border-width:0;color:#334155;background-color:#334155">
+
+                    <div class="detalhe-informacao-chamado">
+                        <p>E-mail solicitante</p>
+                        <p>Setor</p>
+                        <p>Data de abertura</p>
+                    </div>
+
+                    <div class="detalhe-meio-chamado">
+                        <textarea class="detalhe-descricao-chamado" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis cupiditate accusamus laboriosam beatae eos, 
+                            quasi doloribus ea ad rem repellendus omnis quia laborum ratione temporibus
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis cupiditate accusamus laboriosam beatae eos, 
+                            quasi doloribus ea ad rem repellendus omnis quia laborum ratione temporibus
+                        </textarea>
+                    </div>
+                </textarea><!--final detalhe-chamado-->
+
+                <div class="form-fechamento">
+                    <div class="comeco-fechamento">
+                        <h3 class="titulo-fechamento">Gestão do Chamado</h3>
+                        <hr class="linha-fechamento" style="height:0.5px;border-width:0;color:#334155;background-color:#334155;">
+                    </div>
+
+                    <div class="meio-fechamento">
+                        <label for="status" id="status">STATUS ATUAL:</label>
+                        <select name="status" id="opt-status">
+                            <option data-value="">Selecione uma opção</option>
+                            <option data-value="">Aberto</option>   
+                            <option data-value="">Em andamento</option>
+                            <option data-value="">Resolvido</option>
+                            <option data-value="">Cancelado</option>
+                        </select>
+
+                        <div class="tipo-atendimento">
+                            <label for="tendimento" id="lbl-atendimento">TIPO DE ATENDIMENTO:</label></br>
+
+                            <button class="btn-atendimento" name="atendimento" data-value="presencial">Presencial</button>
+                            <button class="btn-atendimento" name="atendimento" data-value="remoto">Remoto</button>
+                            <input type="hidden" name="" id="value-atendimento">
+                        </div>
+                        
+                        <label for="solucao" id="lbl-solucao">SOLUÇÃO: </label>
+                        <textarea name="solucao" id="inp-solucao" placeholder="Digite a solução do chamado" maxlength="100" required></textarea>
+
+                        <button type="submit" id="btn-atualizar">Atualizar chamado</button>
+                    </div>
+
+                </div><!--final form-fechamento-->
+
+            </fieldset><!--final detalhe container-->
+
+            <fieldset class="container-solucao" style="display: none;">
+                <div class="solucao">
+                    <h3 class="titulo-resposta">Solução encontrada:</h3>
+                    <hr class="linha-resposta" style="height:0.5px;border-width:0;color:#334155;background-color:#334155;">
+                    <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam, eveniet eligendi accusamus aliquam praesentium repellendus nisi in nesciunt doloremque itaque maxime ipsam sequi explicabo repellat saepe quisquam illum sapiente.</p>
+                </div>
+            </fieldset>
+        </section><!--final sessão de detalhes do chamado-->
+
+        <!--SESSÃO DE MENSAGEM DE ACESSO CASO O USUÁRIO NÃO SEJA ADM-->
+        <section id="acessoAdmin" style="display: none;">
+            <div class="acesso">
+                <h3></h3>
+                <p class="erro"></p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

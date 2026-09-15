@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-abrir-chamado-2.css">
+    <title>HelpDesk</title>
+</head>
+<body>
+
+   <header class="cabecalho">
+       <a href="#"><img src="img/Logo do Helpdesk do Grupo Icom.png"></a>
+        <nav class="cabecalho-menu">
+            <button onclick="todosChamados()" id="todosChamados" class="cabecalho-menu-item">Todos os chamados</button>
+            <button onclick="meusChamados()" id="meusChamados" class="cabecalho-menu-item">Meus chamados</button>
+            <button onclick="login()" id="entrar" class="cabecalho-menu-item">Entrar</button>
+        </nav>
+
+        <!--
+        <div class="burguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>-->
+    </header>
+
+
+    <div class="box">
+        <div class="chamado">
+            <form action="" id="formChamado" enctype="multipart/form-data" method="post">
+                <h1>Solicite o seu atendimento</h1>
+                <div class="input-container">
+                    <input type="text" name="nome" id="nome_solicitante" placeholder=" " required>
+                    <label for="nome">Seu nome</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="email" id="email_solicitante" placeholder=" " required>
+                    <label for="email">Seu e-mail</label>
+                </div>
+
+                
+                <div class="input-container">
+                    <select name="setor" id="setor_solicitante" required>
+                        <option value="" disabled selected hidden class="primeira"></option>
+                        <option value="agencia">AGÊNCIA</option>
+                        <option value="arquitetura">ARQUITETURA</option>
+                        <option value="comercial">COMERCIAL</option>
+                        <option value="compras">COMPRAS</option>
+                        <option value="diretoria">DIRETORIA</option>
+                        <option value="eventos">EVENTOS</option>
+                        <option value="financeiro">FINANCEIRO</option>
+                        <option value="infinity">INFINITY</option>
+                        <option value="marketing">MARKETING</option>
+                        <option value="operacional">OPERACIONAL</option>
+                        <option value="parcerias">PARCERIAS</option>
+                        <option value="retencão">RETENÇÃO</option>
+                        <option value="rh">RH</option>
+                        <option value="select">SELECT</option>
+                        <option value="select-alinhadores">SELECT ALINHADORES</option>
+                        <option value="select-club">SELECT CLUB</option>
+                        <option value="solucoes">SOLUÇÕES</option>
+                        <option value="sucessodonto">SUCESSODONTO</option>
+                        <option value="the_one">THE ONE</option>
+                        <option value="tv">TV</option>
+                        <option value="criacao">CRIAÇÃO</option>
+                        <option value="mentores">MENTORES</option>
+                        <option value="solucoes">SOLUÇÕES</option>
+                    </select>
+                    <label for="setor" class="setor">Selecione o seu setor</label>
+                </div>
+
+                <div class="input-categoria">
+                    <button type="button" class="btn-categoria active" data-value="Hardware">Hardware</button>
+                    <button type="button" class="btn-categoria" data-value="Software">Software</button>
+                    <button type="button" class="btn-categoria" data-value="Admissão">Admissão</button>
+                    <button type="button" class="btn-categoria" data-value="Suspensão">Suspensão</button>
+                    <button type="button" class="btn-categoria" data-value="Driver">Driver</button>
+                    <button type="button" class="btn-categoria" data-value="Domínios">Domínios</button>
+                    <button type="button" class="btn-categoria" data-value="E-mail">E-mail</button>
+                    <button type="button" class="btn-categoria" data-value="Gestão">Gestão</button>
+                    <button type="button" class="btn-categoria" data-value="Instalação">Instalação</button>
+                    <button type="button" class="btn-categoria" data-value="Suporte para automação">Suporte para automação</button>
+                    <button type="button" class="btn-categoria" data-value="Suporte para o AppSheet">Suporte para o AppSheet</button>
+                    <button type="button" class="btn-categoria" data-value="Suporte para celular">Suporte para celular</button>
+                    <button type="button" class="btn-categoria" data-value="Suporte para computador">Suporte para computador</button>
+                    <button type="button" class="btn-categoria" data-value="Suporte para impressora">Suporte para impressora</button>
+                </div>
+
+                <input type="hidden" name="categoria_selecionada" id="categoria_selecionada" value="">
+
+                
+
+                <div class="input-container">
+                    <textarea name="campo-descricao" id="descricao" placeholder=" " required></textarea>
+                    <label for="campo-descricao" id="area">Descreva sua solicitação</label>
+                </div>
+
+                <div class="input-container-img">
+                    <label for="img-chamado" id="label-img">Print/Imagem do problema</label>
+                    <input type="file" name="img-chamado" id="img_chamado">
+
+                <button type="submit" id="enviar-chamado">Enviar</button>
+            
+            </form>
+        </div>
+    </div><!--final div box-->
+    <script defer src="abrirChamado.js"></script>
+</body>
+</html>

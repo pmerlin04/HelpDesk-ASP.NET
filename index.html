@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo_login.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="titulo">
+            <img src="img/Logo do Helpdesk do Grupo Icom.png" alt="Logo do Helpdesk do Grupo Icom">
+            <h1>Acesse o Painel de Suporte</h1>
+        </div><!--final div titulo-->
+        <!--<div class="login">
+            <div class="input-login">
+                <div class="msg-erro">E-mail não cadastrado</div>
+            </div>
+            <form action="" id="loginForm">
+                
+                <div class="input-login">
+                    <label for="username">Seu nome</label>
+                    <input type="text" name="username" id="usuario" placeholder="Ex: João Pedro" required>
+                </div>
+
+                <div class="input-login">
+                    <label for="email">Endereço de e-mail</label>
+                    <input type="email" name="email" id="email" placeholder="joao.pedro@icom.com.br" required>
+                </div>
+
+                <div class="input-login">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                </div>
+                
+                <div class="input-login">
+                    <button type="submit" id="logar">Acessar</button>
+                </div>
+            </form>
+        </div>-->
+
+        <!-- Divs do Botão do Google -->
+        <div id="g_id_onload"
+            data-client_id="946978224464-f6fhhdc522v76gf8eo5gstmkfu9q0nnc.apps.googleusercontent.com"
+            data-callback="manipularLoginGoogle">
+        </div>
+
+        <div class="g_id_signin" 
+            data-type="standard" 
+            data-shape="rectangular" 
+            data-theme="outline" 
+            data-text="signin_with" 
+            data-size="large"
+            data-logo_alignment="left">
+        </div>
+
+    </div><!--final div container-->
+
+    <script defer src="login.js"></script>
+
+</body>
+</html>

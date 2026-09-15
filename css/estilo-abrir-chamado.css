@@ -1,0 +1,381 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@font-face{
+    font-family: 'Emirates';
+    src: url('EmiratesEssentials-Light.ttf');
+}
+
+/*isso tira a barra de rolação do eixo X e Y*/
+html, body{
+    width: 100vw;
+    overflow: hidden;
+}
+
+body{
+    min-height: 100vh;
+    /*background: #0f172a;*/
+    color: #fff;
+    background: linear-gradient(80deg, #1B2340, #393F87, #4E4AB5);
+    background-size: 400% 400%;
+}
+
+
+
+
+/*PARTE DO MENU*/
+.cabecalho{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131d32;
+    /*
+    backdrop-filter: blur(10px) ;
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 20px 20px #00000025;
+    */
+    
+}
+
+.cabecalho img{
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.cabecalho-menu{
+    display: flex;
+    margin-right: 50px;
+    gap: 32px;
+    font-family: 'Emirates';
+}
+
+.cabecalho-menu a#barra{
+    cursor: context-menu;
+    text-decoration: uppercase;
+}
+
+.cabecalho-menu a#barra:hover{
+    color: #fff2ef;
+}
+
+.cabecalho-menu-item:hover{
+    color: #999;
+    cursor: pointer;
+}
+
+/*div com o form e a imagem*/
+.box{
+    margin-top: 5px;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+/*PARTE DE DENTRO DO FORMULÁRIO*/
+form{
+    margin-top: 20px;
+    margin-right: 60px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+/* Container que segura o input e a label juntos */
+.input-container {
+  position: relative;
+  margin-top: 12px;
+  width: 300px;
+}
+
+
+/* Estilização básica do campo de texto e select */
+.input-container input, .input-container select {
+  width: 50vh;
+  padding: 10px; /*espaçamento dentro do input*/
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  border-top-color: white;
+  font-size: 16px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.input-container textarea{
+  font-size: 16px;
+  width: 50vh;
+  height: 25vh;
+  padding: 10px;
+  padding-top: 20px;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  outline: none;
+  resize: none;
+  border-top-color: #fff;
+  color: #fff;
+  background-color: transparent;
+}
+
+
+.input-container label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-70%); /* Posiciona a label exatamente em cima do texto do input */
+  color: #999;
+  transition: 0.2s ease all;
+  pointer-events: none; /* Permite clicar no input através da label */
+}
+
+
+/*label do setor*/
+.input-container label.setor{
+    top: 50%;
+    transform: translateY(-70%);  /*Posiciona a label exatamente em cima do texto do input */
+    transition: 0.2s ease all;
+    color: #999;
+    pointer-events: none; /* Permite clicar no input através da label */
+}
+
+/*label da categoria*/
+.input-container label.categoria{
+    top: 50%;
+    transform: translateY(-70%);  /*Posiciona a label exatamente em cima do texto do input */
+    transition: 0.2s ease all;
+    color: #999;
+    pointer-events: none; /* Permite clicar no input através da label */
+}
+
+
+/*label da textarea*/
+.input-container label#area {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  padding: 5px;
+  transform: translateY(-70%); /* Posiciona a label exatamente em cima do texto do input */
+  color: #999;
+  background: #131d32;
+  transition: 0.2s ease all;
+  pointer-events: none; /* Permite clicar no input através da label */
+}
+
+
+/*quando o usuário clica no campo*/
+.input-container input:focus ~ label{
+  top:0px;
+  font-size: 20px;
+  color: #f8fafc;
+}
+
+.input-container select:focus ~ label.setor{
+    top: 0;
+    transform: translateY(-50%); /* Joga a label para cima do select */
+    font-size: 18px; /* Diminui um pouco o tamanho ao subir */
+    color: #f8fafc;
+}
+
+.input-container select:focus ~ label.categoria{
+    top: 0;
+    transform: translateY(-50%); /* Joga a label para cima do select */
+    font-size: 18px; /* Diminui um pouco o tamanho ao subir */
+    color: #f8fafc;
+}
+
+select option{
+    background-color: #393F87;
+    color: #fff;
+}
+
+/*quando o usuário clica no campo*/
+.input-container textarea:focus ~ label{
+  top:0px;
+  font-size: 20px;
+  padding: 5px;
+  color: #f8fafc;
+  background: rgb(19, 19, 73);
+}
+
+/*muda a cor da label quando o cursor sair do input*/
+.input-container input:not(:placeholder-shown):not(:focus) ~ label {
+    top: 0px;
+    font-size: 20px;
+    color: #999;
+}
+
+
+/*mantém a label no topo*/
+.input-container select:valid ~ label.setor {
+    top: 0;
+    transform: translateY(-60%); /* Joga a label para cima do select */
+    font-size: 18px; /* Diminui um pouco o tamanho ao subir */
+    color: #999;
+}
+
+/*mantém a label no topo*/
+.input-container select:valid ~ label.categoria {
+    top: 0;
+    transform: translateY(-60%); /* Joga a label para cima do select */
+    font-size: 18px; /* Diminui um pouco o tamanho ao subir */
+    color: #999;
+}
+
+
+/*muda a cor da label quando o cursor sair do input e mantém a label em cima*/
+.input-container textarea:not(:placeholder-shown):not(:focus) ~ label {
+    top: 0px;
+    font-size: 20px;
+    color: #999;
+    background: rgb(19, 19, 73);
+}
+
+
+/*input da imagem do chamado*/
+.input-container-img {
+  margin-bottom: 5px;
+  width: 300px;
+  cursor: pointer;
+}
+
+/*label da imagem*/
+.input-container label#label-img {
+ margin-bottom: 50px;
+  background: gray;
+  color: red;
+  pointer-events: none; /* Permite clicar no input através da label */
+}
+
+
+.chamado{
+        /*
+    top: 20px;
+    right: 55%;
+    */
+    width: 70vh;
+    height: 87vh;
+    left: 30%;
+    border: 2px solid none;
+    border-radius: 20px;
+    /*background: rgba(255,255,255, 0.03);*/
+    background-color: #131d32;
+    backdrop-filter: blur(50px) ; /*efeito de vidro embaçado atrás do form*/
+    -webkit-backdrop-filter: blur(50px);  /*efeito de vidro embaçado atrás do form*/
+    box-shadow: 20px 20px 20px 20px #00000025;
+}
+
+
+/*BOTÃO SUBMIT DO CHAMADO*/
+button#enviar-chamado{
+    width: 150px;
+    height: 45px;
+    margin-left: 10%;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: #fff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+button#enviar-chamado:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.chamado h1{
+    margin-left: 10%;
+    font-size: 30px;
+    color: #f8fafc;
+    font-family: 'Emirates';
+}
+
+/*div da imagem ao lado do chamado*/
+.imagem-direita{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    width: 100vh;
+    height: 70vh;
+    border: 2px solid none;
+    border-radius: 20px;
+    /*background: rgba(255,255,255, 0.03);*/
+    /*background-color: #ffff;*/
+    /*background-color: red;*/
+    /*background-color: red;*/
+}
+
+.imagem-direita img{
+    width: 70vh;
+    height: auto;
+    /*background-color: #fff;*/
+    
+}
+
+/*Responsividade*/
+@media screen and (max-width: 1000px){
+    .cabecalho{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cabecalho-menu{
+        width: 100%;
+        top: 10px;
+        right: 0;
+        /*
+        transform: translateX(100%);
+        transition: 0.4s;
+        */
+        
+    }
+
+    .cabecalho-menu a{
+        margin-left: 50%;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: red;
+    }
+
+    .cabecalho-menu a#premium, a#entrar, a#barra{
+        display: none;
+    }
+
+    /*
+    .cabecalho-menu a#barra{
+    transform: rotate(90deg);
+    cursor: text;
+    }
+
+    .cabecalho-menu a#entrar{
+        color: #919496;
+        font-size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .cabecalho-menu a#entrar:hover{
+        color: #1ed760;
+    }*/
+
+    .chamado{
+        height: 88vh;
+    }
+    .imagem-direita{
+        display: none;
+    }
+}
+

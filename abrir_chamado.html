@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo-abrir-chamado.css">
+    <link rel="stylesheet" href="https://googleapis.com">
+    <title>HelpDesk</title>
+</head>
+<body>
+
+   <header class="cabecalho">
+       <a href="#"><img src="img/Logo do Helpdesk do Grupo Icom.png"></a>
+        <nav class="cabecalho-menu">
+            <a href="#" id="premium" class="cabecalho-menu-item">Home</a>
+            <a class="cabecalho-menu-item" id="meus-chamados">Meus Chamados</a>
+            <a id="barra" class="cabecalho-menu-item">|</a>
+            <a id="entrar" class="cabecalho-menu-item">Entrar</a>
+        </nav>
+
+        <!--
+        <div class="burguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>-->
+    </header>
+
+
+    <div class="box">
+        <div class="chamado">
+            <form action="" id="formChamado">
+                <h1>Solicite um atendimento</h1>
+                <div class="input-container">
+                    <input type="text" name="nome" id="nome_solicitante" placeholder=" " required>
+                    <label for="nome">Seu nome</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="email" id="email_solicitante" placeholder=" " required>
+                    <label for="email">Seu email</label>
+                </div>
+
+                <div class="input-container">
+                    <select name="setor" id="setor_solicitante" required>
+                        <option value="" disabled selected hidden class="primeira"></option>
+                        <option value="agencia">AGÊNCIA</option>
+                        <option value="arquitetura">ARQUITETURA</option>
+                        <option value="comercial">COMERCIAL</option>
+                        <option value="compras">COMPRAS</option>
+                        <option value="diretoria">DIRETORIA</option>
+                        <option value="eventos">EVENTOS</option>
+                        <option value="financeiro">FINANCEIRO</option>
+                        <option value="infinity">INFINITY</option>
+                        <option value="marketing">MARKETING</option>
+                        <option value="operacional">OPERACIONAL</option>
+                        <option value="parcerias">PARCERIAS</option>
+                        <option value="retencão">RETENÇÃO</option>
+                        <option value="rh">RH</option>
+                        <option value="select">SELECT</option>
+                        <option value="select-alinhadores">SELECT ALINHADORES</option>
+                        <option value="select-club">SELECT CLUB</option>
+                        <option value="solucoes">SOLUÇÕES</option>
+                        <option value="sucessodonto">SUCESSODONTO</option>
+                        <option value="the_one">THE ONE</option>
+                        <option value="tv">TV</option>
+                        <option value="criacao">CRIAÇÃO</option>
+                        <option value="mentores">MENTORES</option>
+                        <option value="solucoes">SOLUÇÕES</option>
+                    </select>
+                    <label for="setor" class="setor">Selecione o seu setor</label>
+                </div>
+
+                <div class="input-container">
+                    <select name="categoria" id="categoria_solicitacao" required>
+                        <option value="" disabled selected hidden></option>
+                        <option value="admissao">Admissão</option>
+                        <option value="driver">Driver</option>
+                        <option value="dominios">Domínios</option>
+                        <option value="email">E-mail</option>
+                        <option value="firewall">Firewall</option>
+                        <option value="gestao">Gestão</option>
+                        <option value="instalacao">Instalação</option>
+                        <option value="liberacao">Liberação de acesso(s)</option>
+                        <option value="slack">Slack</option>
+                        <option value="automacao">Suporte para automação</option>
+                        <option value="appsheet">Suporte para o AppSheet</option>
+                        <option value="celular">Suporte para celular</option>
+                        <option value="computador">Suporte para computador</option>
+                        <option value="impressora">Suporte para impressora</option>
+                        <option value="suspensao">Suspensão</option>
+                    </select>
+                    <label for="categoria" class="categoria">Selecione uma categoria</label>
+                </div>
+
+                <div class="input-container">
+                    <textarea name="campo-descricao" id="descricao" placeholder=" " required></textarea>
+                    <label for="campo-descricao" id="area">Descreva sua solicitação</label>
+                </div>
+
+                <div class="input-container-img">
+                    <label for="img-chamado" id="label-img">Print/Imagem do problema</label>
+                    <input type="file" name="img-chamado" id="img_chamado">
+                </div>
+
+                <button type="submit" id="enviar-chamado">Enviar</button>
+            </form>
+        </div>
+
+        <div class="imagem-direita">
+            <img src="img/Design_sem_nome-removebg-preview.png" alt="" class="svg-pessoa">
+        </div>
+    </div><!--final div box-->
+</body>
+</html>

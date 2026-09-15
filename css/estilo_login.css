@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mona Sans VF", -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+}
+
+body{
+    /*background: linear-gradient(80deg, #1B2340, #3E4380, #4E4AB5);
+    background-size: 400% 400%;*/
+    background: #1B2340;
+    height: 100vh;
+}
+
+.container{
+    position: absolute;
+    width: 80vh;
+    height: 60vh;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 80vh;
+    color: #fff;
+}
+
+.titulo img{
+    width: 90px;
+}
+
+.titulo h1{
+    font-size: 20px;
+}
+
+.erro{
+    border: 1px solid red;
+    background-color: red;
+}
+
+.login{
+    margin-top: 0px;
+    margin-left: 3px;
+    width: 55vh;
+    height: 35vh;
+    border-radius: 15px;
+    /*border: 0.5px solid #9d9d9d;
+    box-shadow: 1px 1px 1px 1px #00000025;
+    background-color: #fff;*/
+}
+
+.login form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 10px;
+    gap: 5px;
+    height: auto;
+}
+
+/* Container que segura o input e a label juntos */
+.input-login {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 3px;
+  width: 300px;
+  /*background-color: gray;*/
+}
+
+.input-login input{
+    width: 53vh;
+    height: 38px;
+    padding: 5px;
+    border-radius: 5px;
+    /*border: 0.5px solid #9d9d9d;*/
+    /*background-color: #f8fafc;*/
+    border: 1px solid #3d444d;
+    color: #fff;
+    background-color: transparent;
+}
+
+.input-login label{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder;
+    /*color: #94a3b8;*/
+    color: #fff;
+}
+
+/*quando o usuário clica no campo*/
+.input-login input:focus {
+    border: 2px solid #393F87;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px #888888;
+
+}
+
+.input-login button{
+    width: 53vh;
+    height: 38px;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(0, 135, 0);
+    
+}
+
+.input-login button:hover{
+    background-color: rgb(0, 157, 0);
+}
+
+
+
+.msg-erro{
+    margin-left: 115px;
+    width: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    display: none;
+    color: red;
+}
+
+#g_id_onload{
+    margin-top: 30px;
+    width: 200px;
+    background-color: green;
+}
+
+.S9gUrf-YoZ4jf{
+    width: 300px;
+}
+
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{
+    font-weight: bold;
+}
+
+/*
+.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{
+    background-color: #1B2340;
+}*/
+
+/*Responsividade*/
+@media screen and (max-width: 1000px){
+    .container{
+        left: 15%;
+    }
+}
+
+
+
+

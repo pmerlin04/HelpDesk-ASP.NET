@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-meus-chamados.css">
+    <title>Document</title>
+</head>
+<body>
+     <header class="cabecalho">
+            
+            <script>
+                const email = localStorage.getItem('email');
+                const cabecalho = document.querySelector('.cabecalho');
+                cabecalho.innerHTML = ''; //limpou o header
+                const itemCabecalho = document.createElement('nav');
+                itemCabecalho.classList.add('cabecalho-menu');
+
+                if(email == "pedro.conceicao@icom.com.br"){
+                    console.log("email autorizado: ", email)
+                    
+
+                    cabecalho.innerHTML += `
+                        <img src="img/Logo do Helpdesk do Grupo Icom.png">
+                        <nav class="cabecalho-menu">
+                            <button onclick="mostrarFormChamado()" id="openChamado" class="cabecalho-menu-item">Abrir chamado</button>
+                            <button onclick="todosChamados()" class="cabecalho-menu-item">Todos os chamados</button>
+                            <button onclick="voltarMeusChamados()" id="meusChamados" class="cabecalho-menu-item">Meus chamados</button>
+                            <button onclick="logout()" id="entrar" class="cabecalho-menu-item">Sair</button>
+                        </nav>
+                    
+                    `;
+
+                }else{
+                    console.log("email não autorizado: ", email)
+                    cabecalho.innerHTML = `
+                    <a href="#"><img src="img/Logo do Helpdesk do Grupo Icom.png"></a>
+                        <nav class="cabecalho-menu">
+                            <button onclick="mostrarFormChamado()" id="openChamado" class="cabecalho-menu-item">Abrir chamado</button>
+                            <button onclick="voltarMeusChamados()" id="meusChamados" class="cabecalho-menu-item">Meus chamados</button>
+                            <button onclick="logout()" id="entrar" class="cabecalho-menu-item">Sair</button>
+                        </nav>
+                    `;
+                }
+                
+            </script>
+
+        <!--
+        <div class="burguer">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+        </div>-->
+    </header>
+
+    <main class="corpo">
+        <section class="mostrarChamados" style="display: block;">
+            <fieldset class="container">
+                <div class="chamados">
+                    <div class="comeco-chamado">
+                        <p class="id-chamado">ID</p>
+                        <p class="categoria-chamado">Setor</p>
+                    </div>
+                    <div class="meio-chamado">
+                        <h3 class="titulo-chamado">Titulo do chamado</h3>
+                        <p class="descricao-chamado">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis cupiditate accusamus laboriosam beatae eos, 
+                            quasi doloribus ea ad rem repellendus omnis quia laborum ratione temporibus</p>
+                    </div>
+                    <div class="linha">
+                        <hr style="height:0.5px;border-width:0;color:#334155;background-color:#334155">
+                    </div>
+                    <div class="final-chamado">
+                        <p>Nome solicitante</p>
+                        <p>Status</p>
+                        <button onclick="mostrarDetalhes()">Ver Detalhes</button><!--no parâmetro da function, vai o ID do chamado-->
+                    </div>
+                </div><!--final chamado-->
+            </fieldset>
+        </section>
+
+
+            <!--SESSÃO PARA VER DETALHES DO CHAMADO-->
+        <section id="detalhe-chamado" style="display: none;">
+            <button class="voltar" onclick="voltarMeusChamados()">Voltar</button>
+            <fieldset class="detalhe-container">
+                <div class="detalhe-card">
+                    <div class="detalhe-comeco-chamado">
+                        <p class="detalhe-id-chamado">ID</p>
+                        <p class="detalhe-categoria-chamado">Categoria</p>
+                        <p class="detalhe-status-chamado">Status</p>
+                    </div>
+
+                    <h3 class="detalhe-titulo-chamado">Titulo do chamado</h3>
+
+                    <hr class="detalhe-linha" style="height:0.5px;border-width:0;color:#334155;background-color:#334155">
+
+                    <div class="detalhe-informacao-chamado">
+                        <p>E-mail solicitante</p>
+                        <p>Setor</p>
+                        <p>Data de abertura</p>
+                    </div>
+
+                    <div class="detalhe-meio-chamado">
+                        <textarea class="detalhe-descricao-chamado" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis cupiditate accusamus laboriosam beatae eos, 
+                            quasi doloribus ea ad rem repellendus omnis quia laborum ratione temporibus
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Blanditiis cupiditate accusamus laboriosam beatae eos, 
+                            quasi doloribus ea ad rem repellendus omnis quia laborum ratione temporibus
+                        </textarea>
+                    </div>
+
+                    <div id ="detalhe-container-imagem">
+                        <img id="imagem-chamado" src="" alt="">
+                    </div>
+                
+                </div><!--final detalhe-chamado-->
+            
+            </fieldset>
+
+            <fieldset class="container-solucao" style="display: none;">
+                    <div class="solucao">
+                        <h3 class="titulo-resposta">Solução encontrada:</h3>
+                        <hr class="linha-resposta" style="height:0.5px;border-width:0;color:#334155;background-color:#334155;">
+                        <p class="resposta">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit ullam, eveniet eligendi accusamus aliquam praesentium repellendus nisi in nesciunt doloremque itaque maxime ipsam sequi explicabo repellat saepe quisquam illum sapiente.</p>
+                    </div>
+            </fieldset>
+
+        </section><!--final sessão de detalhes do chamado-->
+
+    </main>
+    <script src="meus_chamados.js"></script>
+
+</body>
+</html>
