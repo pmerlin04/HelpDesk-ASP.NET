@@ -827,9 +827,9 @@ formularioChamado.addEventListener('submit', async function(e){
     formData.append('descricao', inputDescricao.value);
     formData.append('statusChamado', "Aberto");
     formData.append('emailUsuario', emailConta);
-    formData.append('to', "pedro.conceicao@icom.com.br");
-    formData.append('subject', "Chamado aberto");
-    formData.append('body', `O colaborador ${emailConta} abriu um chamado sobre ${inputHidden.value}`);
+    //formData.append('to', "pedro.conceicao@icom.com.br");
+    //formData.append('subject', "Chamado aberto");
+    //formData.append('body', `O colaborador ${emailConta} abriu um chamado sobre ${inputHidden.value}`);
     console.log(Object.fromEntries(formData));
 
 
