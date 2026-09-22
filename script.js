@@ -64,9 +64,9 @@ btn.forEach(btnMenu =>{
 });
 
 //const API_BASE = ' https://api-helpdesk-icom.onrender.com';
-const API_BASE = ' https://api-helpdesk-icom.onrender.com';
+const API_BASE = 'https://api-helpdesk-icom.onrender.com';
 const API_URL_FINDALL = 'https://api-helpdesk-icom.onrender.com/api/chamados';
-const API_URL_FINDWITHPAGED = ' https://api-helpdesk-icom.onrender.com/api/Chamados/10/1?sortDirection=desc';
+const API_URL_FINDWITHPAGED = 'https://api-helpdesk-icom.onrender.com/api/Chamados/10/1?sortDirection=desc';
 /*FUNCTION PARA PEGAR OS CHAMADOS DO BACK END SEM PAGINAÇÃO
 async function carregarChamados(){
     try{
