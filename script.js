@@ -833,7 +833,7 @@ formularioChamado.addEventListener('submit', async function(e){
     console.log(Object.fromEntries(formData));
 
 
-    if(inputImg.isDefaultNamespace.length > 0){
+    if(inputImg.files && inputImg.files.length > 0){
         //'arquivoImagem' é o parâmetro no controller IFormFile
         formData.append('arquivoImagem', inputImg.files[0]);
     }
