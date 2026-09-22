@@ -849,7 +849,7 @@ formularioChamado.addEventListener('submit', async function(e){
     };*/
 
     try{
-        const response = await fetch(API_URL_FINDALL,{
+        const response = await fetch("https://api-helpdesk-icom.onrender.com/api/chamados",{
             method: 'POST',
             headers:{
                 'Authorization': `Bearer ${localStorage.getItem('token')}`
