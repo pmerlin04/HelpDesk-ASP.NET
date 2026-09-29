@@ -143,14 +143,16 @@ body{
     width: 300px;
 }
 
+
+
 .nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-BPrWId{
     font-weight: bold;
 }
 
-/*
-.nsm7Bb-HzV7m-LgbsSe .nsm7Bb-HzV7m-LgbsSe-MJoBVe{
-    background-color: #1B2340;
-}*/
+
+.nsm7Bb-HzV7m-LgbsSe-MJoBVe{
+    width: 1500px;
+}
 
 /*Responsividade*/
 @media screen and (max-width: 1000px){
