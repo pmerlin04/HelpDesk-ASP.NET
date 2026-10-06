@@ -3,7 +3,7 @@
 //verifica se o usuário fez o login
 const token = localStorage.getItem('token');
 const emailConta = localStorage.getItem('email');
-console.log("token: ", token)
+//console.log("token: ", token)
 console.log("email: ", emailConta)
 //console.log(localStorage.getItem('email'));
 

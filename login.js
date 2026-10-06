@@ -145,8 +145,8 @@ async function manipularLoginGoogle(googleResponse){
         localStorage.setItem('email', data.emailUsuario)
         const codigo = localStorage.getItem('token');
         const emailConta = localStorage.getItem('email');
-        console.log("oi", codigo)
-        console.log(emailConta)
+        //console.log("oi", codigo)
+        //console.log(emailConta)
 
         alert("Login com o google efetuado com sucesso");
         window.location.href = "chamados.html#novo-chamado";
