@@ -387,9 +387,6 @@ async function exibirDetalhes(id){
 
                 <label for="atendente" id="atendente">EMAIL ATENDENTE:</label>
                 <select name="atendente" id="opt-atendente">
-                    <option value="abraao.silva@icom.com.br">Abraão Salazar</option>
-                    <option value="gabriel.vespasiano@icom.com.br">Gabriel Vespasiano</option>
-                    <option value="lucas.marques@icom.com.br">Lucas Marques</option>
                     <option value="pedro.conceicao@icom.com.br">Pedro Merlin</option> 
                 </select>
 
