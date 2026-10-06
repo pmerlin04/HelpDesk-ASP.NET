@@ -456,7 +456,7 @@ body{
     }
 
     .chamado{
-        width: 150vw;
+        width: 140vw;
         margin-left: 3%;
         margin-top: 5%;
     }
@@ -467,7 +467,12 @@ body{
     }
 
     .input-categoria{
-        margin-left: 15px;
+        margin-left: 5px;
+        width: 130vw;
+    }
+
+    .input-categoria button{
+        width: 170px;
     }
 
     .input-container textarea{
