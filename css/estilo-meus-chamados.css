@@ -333,10 +333,10 @@ body{
     .cabecalho{
         display: flex;
         justify-content: space-around;
-        width: 143vw;
+        width: 100vw;
     }
     .cabecalho-menu{
-        width: 130vw;
+        width: 80vw;
         top: 10px;
         right: 0;
         /*
@@ -384,7 +384,9 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 200vh;
+    width: 100%;
+    height: 150vh;
+    overflow-x: hidden;
     }
 
     .filtro{
@@ -425,40 +427,46 @@ body{
     }
 
     .chamado{
-        width: 140vw;
+        width: 95vw;
         margin-left: 3%;
-        margin-top: 5%;
+        margin-top: 80px;
+        height: 122vh;
     }
 
     .chamado h1{
-        margin-left: 22%;
+        margin-left: 14%;
+        font-size: 25px;
+        width: 350px;
     }
 
     .input-container input, .input-container select{
-        width: 130vw;
+        width: 80vw;
 
     }
 
     .input-categoria{
-        margin-left: 5px;
-        width: 130vw;
+        display: grid;
+        grid-template-columns: 200px 200px;
+        margin-left: 17px;
+        width: 92vw;
+        height: 30vh;
     }
 
     .input-categoria button{
-        width: 170px;
+        width: 160px;
     }
 
     .input-container textarea{
-        width: 130vw;
+        width: 80vw;
     }
 
     button#enviar-chamado{
-        width: 130vw;
+        width: 80vw;
         margin-left: 0px;
     }
 
     #paginacao{
-        display: none;
+        color: transparent;
     }
 
 
