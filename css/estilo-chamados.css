@@ -367,7 +367,7 @@ body{
     .cabecalho{
         display: flex;
         justify-content: space-around;
-        width: 160vw;
+        width: 143vw;
     }
     .cabecalho-menu{
         width: 130vw;
@@ -385,9 +385,10 @@ body{
         font-weight: 700;
     }
 
-    .cabecalho-menu a#premium, a#entrar, a#barra{
-        display: none;
+    .cabecalho-menu button#entrar{
+        background-color: red;
     }
+
 
 
     /*
