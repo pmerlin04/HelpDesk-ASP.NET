@@ -431,11 +431,18 @@ body{
     }
 
     .comeco-chamado p.categoria-chamado{
-        width: 50%;
+        width: 60%;
+    }
+
+    .meio-chamado{
+        height: 10vh;
     }
 
     .final-chamado{
-        width: 100px;
+        display: flex;
+        justify-content: column;
+        font-size: 17px;
+        gap: 10px;
     }
 
     .chamado h1{
