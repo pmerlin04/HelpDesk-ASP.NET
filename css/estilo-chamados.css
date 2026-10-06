@@ -459,7 +459,7 @@ body{
     }
 
     .chamado{
-        width: 140vw;
+        width: 95vw;
         margin-left: 3%;
         margin-top: 5%;
     }
@@ -488,11 +488,11 @@ body{
     }
 
     .input-container textarea{
-        width: 130vw;
+        width: 80vw;
     }
 
     button#enviar-chamado{
-        width: 130vw;
+        width: 80vw;
         margin-left: 0px;
     }
 
