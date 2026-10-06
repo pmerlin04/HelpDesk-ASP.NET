@@ -367,10 +367,10 @@ body{
     .cabecalho{
         display: flex;
         justify-content: space-around;
-        width: 200vw;
+        width: 160vw;
     }
     .cabecalho-menu{
-        width: 100%;
+        width: 130vw;
         top: 10px;
         right: 0;
         /*
@@ -381,7 +381,6 @@ body{
     }
 
     .cabecalho-menu a{
-        margin-left: 70%;
         font-size: 20px;
         font-weight: 700;
     }
@@ -409,6 +408,7 @@ body{
 
     body{
         overflow-x: hidden;
+        
     }
 
     /*main*/
