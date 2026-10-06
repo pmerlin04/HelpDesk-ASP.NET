@@ -386,7 +386,7 @@ body{
     }
 
     .cabecalho-menu button#entrar{
-        background-color: red;
+        margin-right: 30px;
     }
 
 
