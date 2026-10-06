@@ -419,6 +419,7 @@ body{
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
+    height: 150vh;
     overflow-x: hidden;
     }
 
@@ -463,7 +464,7 @@ body{
         width: 95vw;
         margin-left: 3%;
         margin-top: 50%;
-        height: 132vh;
+        height: 105vh;
     }
 
     .chamado h1{
