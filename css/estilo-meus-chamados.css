@@ -428,7 +428,7 @@ body{
 
     .chamados{
         width: 82vw;
-        height: 50vh;
+        height: 65vh;
     }
 
     .comeco-chamado p.categoria-chamado{
@@ -436,7 +436,7 @@ body{
     }
 
     .meio-chamado{
-        height: 25vh;
+        height: 30vh;
     }
 
     .final-chamado{
