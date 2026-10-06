@@ -245,7 +245,7 @@ function exibirChamados(chamados){
         filtroChamados.style.display = "none";
         console.log("acesso negado")
         
-        containerAcesso.style.display = "flex";
+        containerAcesso.style.display = "none";
 
         const divAcesso = document.querySelector('.acesso');
 
