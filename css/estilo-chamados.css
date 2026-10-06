@@ -367,6 +367,7 @@ body{
     .cabecalho{
         display: flex;
         justify-content: space-around;
+        width: 200vw;
     }
     .cabecalho-menu{
         width: 100%;
@@ -415,7 +416,6 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 30%;
     width: 200vh;
     }
 
@@ -453,6 +453,26 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 30vh;
+    }
+
+    .chamado{
+        width: 180vw;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+
+    .input-container input, .input-container select{
+        width: 150vw;
+
+    }
+
+    .input-container textarea{
+        width: 150vw;
+    }
+
+    button#enviar-chamado{
+        width: 150vw;
+        margin-left: 0px;
     }
 
 
