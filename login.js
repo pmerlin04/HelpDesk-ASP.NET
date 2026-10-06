@@ -153,6 +153,7 @@ async function manipularLoginGoogle(googleResponse){
 
 
     }catch(error){
+        alert("Falha na autenticação com o Google");
         console.log("erro ao logar com o google ", error);
         //console.log(emailConta)
     }
