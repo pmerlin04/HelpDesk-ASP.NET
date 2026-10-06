@@ -418,7 +418,8 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 200vh;
+    width: 100%;
+    overflow-x: hidden;
     }
 
     .filtro{
@@ -461,7 +462,8 @@ body{
     .chamado{
         width: 95vw;
         margin-left: 3%;
-        margin-top: 5%;
+        margin-top: 50%;
+        height: 132vh;
     }
 
     .chamado h1{
