@@ -771,12 +771,14 @@ function exibirMeusChamados(){
 
 //FUNCTION PARA MOSTRAR A SEÇÃO NA PÁGINA DE ABRIR CHAMADO
 function mostrarFormChamado(){
+    const divPaginacao = document.getElementById('paginacao');
     //if(emailConta != "pedro.conceicao@icom.com.br"){
         console.log("oi", emailConta)
         mostrarForm.style.display = "block";
         mostrarChamados.style.display = "none";
         detalheChamado.style.display = "none";
         containerAcesso.style.display = "none";
+        divPaginacao.style.display = "none";
     //}
 }
 
