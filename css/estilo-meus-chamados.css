@@ -333,9 +333,10 @@ body{
     .cabecalho{
         display: flex;
         justify-content: space-around;
+        width: 143vw;
     }
     .cabecalho-menu{
-        width: 100%;
+        width: 130vw;
         top: 10px;
         right: 0;
         /*
@@ -346,14 +347,15 @@ body{
     }
 
     .cabecalho-menu a{
-        margin-left: 70%;
         font-size: 20px;
         font-weight: 700;
     }
 
-    .cabecalho-menu a#premium, a#entrar, a#barra{
-        display: none;
+    .cabecalho-menu button#entrar{
+        margin-right: 30px;
     }
+
+
 
     /*
     .cabecalho-menu a#barra{
@@ -374,6 +376,7 @@ body{
 
     body{
         overflow-x: hidden;
+        
     }
 
     /*main*/
@@ -381,7 +384,6 @@ body{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    margin-left: 30%;
     width: 200vh;
     }
 
@@ -419,8 +421,45 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 30vh;
+        height: 102vh;
+    }
+
+    .chamado{
+        width: 140vw;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .chamado h1{
+        margin-left: 22%;
+    }
+
+    .input-container input, .input-container select{
+        width: 130vw;
+
+    }
+
+    .input-categoria{
+        margin-left: 5px;
+        width: 130vw;
+    }
+
+    .input-categoria button{
+        width: 170px;
+    }
+
+    .input-container textarea{
+        width: 130vw;
+    }
+
+    button#enviar-chamado{
+        width: 130vw;
+        margin-left: 0px;
+    }
+
+    #paginacao{
+        display: none;
     }
 
 
 }
-
