@@ -456,22 +456,26 @@ body{
     }
 
     .chamado{
-        width: 180vw;
-        margin-left: 7%;
+        width: 150vw;
+        margin-left: 3%;
         margin-top: 5%;
     }
 
     .input-container input, .input-container select{
-        width: 150vw;
+        width: 130vw;
 
+    }
+
+    .input-categoria{
+        margin-left: 15px;
     }
 
     .input-container textarea{
-        width: 150vw;
+        width: 130vw;
     }
 
     button#enviar-chamado{
-        width: 150vw;
+        width: 130vw;
         margin-left: 0px;
     }
 
