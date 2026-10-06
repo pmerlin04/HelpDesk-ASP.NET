@@ -748,6 +748,8 @@ carregarChamadosPaginados(1);
 
 //FUNCTION PARA IR DA TELA DE ABERTURA DE CHAMADOS ATÉ TODOS OS CHAMADOS
 function mostrarTodosChamados(){
+    const divPaginacao = document.getElementById('paginacao');
+    divPaginacao.style.display = "block";
     mostrarForm.style.display = "none";
     if(emailConta == "pedro.conceicao@icom.com.br"){
         //exibe a tela com todos os chamados
