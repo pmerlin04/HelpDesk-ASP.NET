@@ -353,7 +353,7 @@ async function exibirDetalhes(id){
 
                 <div class="detalhe-informacao-chamado">
                    <p>${chamado.emailUsuario}</p>
-                    <p>Setor</p>
+                    <p>${chamado.setor}</p>
                     <p>${dataComIntl.format(new Date(chamado.dataAbertura))}</p>
                 </div>
             
