@@ -389,6 +389,7 @@ body{
         display: none;
     }
 
+
     /*
     .cabecalho-menu a#barra{
     transform: rotate(90deg);
@@ -453,12 +454,17 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 30vh;
+        height: 102vh;
     }
 
     .chamado{
         width: 140vw;
         margin-left: 3%;
         margin-top: 5%;
+    }
+
+    .chamado h1{
+        margin-left: 22%;
     }
 
     .input-container input, .input-container select{
@@ -482,6 +488,10 @@ body{
     button#enviar-chamado{
         width: 130vw;
         margin-left: 0px;
+    }
+
+    #paginacao{
+        display: none;
     }
 
 
