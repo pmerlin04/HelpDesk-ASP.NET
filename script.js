@@ -824,7 +824,7 @@ formularioChamado.addEventListener('submit', async function(e){
     formData.append('descricao', inputDescricao.value);
     formData.append('statusChamado', "Aberto");
     formData.append('emailUsuario', emailConta);
-    formData.append('dataAbertura', Date.now());
+    //formData.append('dataAbertura', Date.now());
     formData.append('to', "pedromerlin2004@gmail.com");
     formData.append('subject', "Chamado aberto");
     formData.append('body', `O colaborador ${emailConta} abriu um chamado sobre ${inputHidden.value}`);
