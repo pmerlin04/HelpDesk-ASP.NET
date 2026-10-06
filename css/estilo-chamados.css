@@ -465,21 +465,26 @@ body{
     }
 
     .chamado h1{
-        margin-left: 22%;
+        margin-left: 14%;
+        font-size: 25px;
+        width: 350px;
     }
 
     .input-container input, .input-container select{
-        width: 130vw;
+        width: 80vw;
 
     }
 
     .input-categoria{
+        display: grid;
+        grid-template-columns: 200px 200px;
         margin-left: 5px;
-        width: 130vw;
+        width: 92vw;
+        height: 30vh;
     }
 
     .input-categoria button{
-        width: 170px;
+        width: 190px;
     }
 
     .input-container textarea{
