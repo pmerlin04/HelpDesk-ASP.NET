@@ -499,7 +499,7 @@ body{
     }
 
     #paginacao{
-        display: none;
+        color: transparent;
     }
 
 
