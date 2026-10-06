@@ -427,10 +427,15 @@ body{
     }
 
     .chamados{
-        width: 95vw;
-        margin-left: 3%;
-        margin-top: 80px;
-        height: 122vh;
+        width: 82vw;
+    }
+
+    .comeco-chamado p.categoria-chamado{
+        width: 50%;
+    }
+
+    .final-chamado{
+        width: 100px;
     }
 
     .chamado h1{
