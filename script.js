@@ -819,11 +819,12 @@ formularioChamado.addEventListener('submit', async function(e){
     console.log(inputImg.value);
 
     formData.append('tituloChamado', inputTitulo.value);
-    formData.append('setor', inputTitulo.value);
+    formData.append('setor', inputSetor.value);
     formData.append('categoria', inputHidden.value);
     formData.append('descricao', inputDescricao.value);
     formData.append('statusChamado', "Aberto");
     formData.append('emailUsuario', emailConta);
+    formData.append('dataAbertura', Date.now());
     formData.append('to', "pedromerlin2004@gmail.com");
     formData.append('subject', "Chamado aberto");
     formData.append('body', `O colaborador ${emailConta} abriu um chamado sobre ${inputHidden.value}`);
