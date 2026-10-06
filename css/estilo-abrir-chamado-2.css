@@ -246,7 +246,7 @@ button#enviar-chamado{
     border-radius: 10px;
     font-weight: 600;
     border-color: #fff;
-    background-color: transparent;
+    background-color: red;
     color: #fff;
     cursor: pointer;
 }
