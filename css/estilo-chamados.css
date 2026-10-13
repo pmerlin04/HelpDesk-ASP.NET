@@ -473,14 +473,14 @@ body{
     }
 
     #paginacao{
-        width: 95vw;
+        width: 100vw;
         font-size: 13px;
         margin-top: 20px;
         background-color: blue;
     }
 
     #paginacao button#btn-anterior, button#btn-proximo{
-        width: 60px;
+        width: 65px;
         font-size: 14px;
     }
     
