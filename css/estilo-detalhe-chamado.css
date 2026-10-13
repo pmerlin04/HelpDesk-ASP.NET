@@ -402,6 +402,7 @@ button#btn-atualizar:hover{
         justify-content: space-around;
         gap: 5px;
         margin-bottom: 10px;
+        margin-left: -10px;
         font-size: 15px;
     }
 
@@ -410,7 +411,7 @@ button#btn-atualizar:hover{
     }
 
     .detalhe-comeco-chamado p.detalhe-categoria-chamado{
-        width: 60%;
+        width: 65%;
     }
 
     .detalhe-comeco-chamado p.detalhe-status-chamado{
@@ -419,7 +420,6 @@ button#btn-atualizar:hover{
 
     .detalhe-card h3{
         font-size: 25px;
-        text-align: center;
     }
 
     .detalhe-informacao-chamado{
