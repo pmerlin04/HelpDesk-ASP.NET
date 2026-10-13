@@ -371,4 +371,75 @@ button#btn-atualizar:hover{
 }
 
 
+/*Responsividade*/
+@media screen and (max-width: 1000px){
+
+    #detalhe-chamado{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-left: 20px;
+        background-color: azure;
+    }
+    .detalhe-container{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -0px;
+        background-color: red;
+    }
+
+    .detalhe-card{
+        width: 95vw;
+        height: 63vh;
+    }
+
+    .detalhe-comeco-chamado{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .detalhe-comeco-chamado p.detalhe-id-chamado{
+        width: 90px;
+    }
+
+    .detalhe-comeco-chamado p.detalhe-categoria-chamado{
+        width: 60%;
+    }
+
+    .detalhe-comeco-chamado p.detalhe-status-chamado{
+        margin-right: 15px;
+    }
+
+    .detalhe-card h3{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .detalhe-informacao-chamado{
+        font-size: 12px;
+        margin-top: 5px;
+        gap: 10px;
+    }
+
+    .detalhe-meio-chamado textarea{
+        margin-top: 10px;
+        font-size: 15px;
+
+    }
+
+    .container-solucao{
+        background-color: blue;
+    }
+
+    .solucao{
+        width: 95vw;
+    }
+
+}
+
+
 
