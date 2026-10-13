@@ -314,25 +314,34 @@ button#enviar-chamado:hover{
         display: none;
     }
 
-    /*
-    .cabecalho-menu a#barra{
-    transform: rotate(90deg);
-    cursor: text;
+    .box{
+        margin-top: 150px;
     }
-
-    .cabecalho-menu a#entrar{
-        color: #919496;
-        font-size: 24px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-
-    .cabecalho-menu a#entrar:hover{
-        color: #1ed760;
-    }*/
 
     .chamado{
         height: 115vh;
+        width: 95vw;
+        margin-left: 10px;
+    }
+
+    .chamado h1{
+        margin-left: 54px;
+        font-size: 25px;
+        width: 100%;
+    }
+
+    .input-container input, .input-container select{
+        width: 85vw;
+    }
+
+    .input-categoria{
+        display: grid;
+        grid-template-columns: 200px 200px;
+        height: 250px;
+    }
+
+    .input-categoria button{
+        width: 170px;
     }
 
     .imagem-direita{
