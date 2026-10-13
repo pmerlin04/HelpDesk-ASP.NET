@@ -369,15 +369,11 @@ body{
         justify-content: space-around;
         width: 100vw;
     }
+
     .cabecalho-menu{
         width: 80vw;
         top: 10px;
-        right: 0;
-        /*
-        transform: translateX(100%);
-        transition: 0.4s;
-        */
-        
+        right: 0; 
     }
 
     .cabecalho-menu a{
@@ -389,67 +385,57 @@ body{
         margin-right: 30px;
     }
 
-
-
-    /*
-    .cabecalho-menu a#barra{
-    transform: rotate(90deg);
-    cursor: text;
-    }
-
-    .cabecalho-menu a#entrar{
-        color: #919496;
-        font-size: 24px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-
-    .cabecalho-menu a#entrar:hover{
-        color: #1ed760;
-    }*/
-
     body{
         overflow-x: hidden;
-        
     }
 
     /*main*/
     .corpo{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 100%;
-    height: 150vh;
-    overflow-x: hidden;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+        overflow-x: hidden;
     }
 
     .filtro{
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: teal;
-    width:60vh;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: teal;
+        width:100vh;
+        height: 10vh;
+    }
+
+    .barra-pesquisa-btn{
+        width: 80vw;
+    }
+
+    .btn-status{
+        width: 77px;
+        font-size: 13px;
     }
 
     .status{
-    display: flex;
-    justify-content: center;
-    background-color: turquoise;
-    width: 100%;
-    font-weight: 600;
-    font-size: 13px;
+        display: flex;
+        justify-content: center;
+        background-color: turquoise;
+        width: 100%;
+        font-weight: 600;
+        font-size: 13px;
     }
 
     .status p{
-    margin-left: 10px;
+        margin-left: 10px;
     }
 
     .status ul{
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 13px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        gap: 13px;
     }
 
 
@@ -460,7 +446,7 @@ body{
         height: 102vh;
     }
 
-    .chamado{
+    .chamados{
         width: 95vw;
         margin-left: 3%;
         margin-top: 80px;
@@ -473,35 +459,7 @@ body{
         width: 350px;
     }
 
-    .input-container input, .input-container select{
-        width: 80vw;
-
-    }
-
-    .input-categoria{
-        display: grid;
-        grid-template-columns: 200px 200px;
-        margin-left: 17px;
-        width: 92vw;
-        height: 30vh;
-    }
-
-    .input-categoria button{
-        width: 160px;
-    }
-
-    .input-container textarea{
-        width: 80vw;
-    }
-
-    button#enviar-chamado{
-        width: 80vw;
-        margin-left: 0px;
-    }
-
-    #paginacao{
-        color: transparent;
-    }
+    
 
 
 }
