@@ -474,13 +474,13 @@ body{
 
     #paginacao{
         width: 95vw;
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 20px;
         background-color: blue;
     }
 
     #paginacao button#btn-anterior, button#btn-proximo{
-        width: 80px;
+        width: 60px;
         font-size: 14px;
     }
     
