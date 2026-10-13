@@ -404,7 +404,6 @@ body{
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: teal;
         width:100vw;
         height: 10vh;
     }
@@ -422,7 +421,6 @@ body{
     .status{
         display: flex;
         justify-content: center;
-        background-color: turquoise;
         width: 100%;
         font-weight: 600;
         font-size: 19px;
@@ -452,14 +450,16 @@ body{
     .chamados{
         width: 95vw;
         margin-left: 3%;
-        margin-top: 80px;
-        height: 122vh;
+        margin-top: 30px;
+        height: 70vh;
     }
 
-    .chamado h1{
-        margin-left: 14%;
-        font-size: 25px;
-        width: 350px;
+    .comeco-chamado{
+        background-color: red;
+    }
+
+    .comeco-chamado p.id-chamado{
+        width: 50px;
     }
 
     #paginacao{
