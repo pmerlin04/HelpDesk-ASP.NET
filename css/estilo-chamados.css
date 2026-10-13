@@ -480,7 +480,7 @@ body{
     }
 
     #paginacao button#btn-anterior, button#btn-proximo{
-        width: 100px;
+        width: 80px;
         font-size: 14px;
     }
     
