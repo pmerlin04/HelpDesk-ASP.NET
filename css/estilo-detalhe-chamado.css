@@ -404,10 +404,11 @@ button#btn-atualizar:hover{
         margin-bottom: 10px;
         margin-left: -10px;
         font-size: 14px;
+        background-color: black;
     }
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
-        width: 180px;
+        width: 200px;
         padding: 2px;
     }
 
