@@ -230,6 +230,11 @@ fieldset{
 /*Responsividade*/
 @media screen and (max-width: 1000px){
 
+    #detalhe-chamado{
+        display: flex;
+        justify-content: flex-start;
+        background-color: azure;
+    }
     .detalhe-container{
         display: flex;
         justify-content: flex-start;
