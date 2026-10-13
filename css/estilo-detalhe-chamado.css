@@ -406,7 +406,7 @@ button#btn-atualizar:hover{
     }
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
-        width: 90px;
+        width: 150px;
     }
 
     .detalhe-comeco-chamado p.detalhe-categoria-chamado{
@@ -425,6 +425,7 @@ button#btn-atualizar:hover{
     .detalhe-informacao-chamado{
         font-size: 12px;
         margin-top: 5px;
+        margin-left: -10px;
         gap: 10px;
     }
 
