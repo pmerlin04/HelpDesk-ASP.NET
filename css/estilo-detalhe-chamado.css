@@ -400,19 +400,19 @@ button#btn-atualizar:hover{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        gap: 5px;
+        gap: 10px;
         margin-bottom: 10px;
         margin-left: -10px;
         font-size: 14px;
     }
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
-        width: 150px;
+        width: 160px;
         padding: 2px;
     }
 
     .detalhe-comeco-chamado p.detalhe-categoria-chamado{
-        width: 65%;
+        width: 70%;
         padding: 2px;
     }
 
