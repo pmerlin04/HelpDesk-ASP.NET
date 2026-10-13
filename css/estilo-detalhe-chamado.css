@@ -408,10 +408,12 @@ button#btn-atualizar:hover{
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
         width: 150px;
+        padding: 2px;
     }
 
     .detalhe-comeco-chamado p.detalhe-categoria-chamado{
         width: 65%;
+        padding: 2px;
     }
 
     .detalhe-comeco-chamado p.detalhe-status-chamado{
@@ -436,6 +438,14 @@ button#btn-atualizar:hover{
 
     .form-fechamento{
         width: 93vw;
+    }
+
+    .linha-fechamento{
+        width: 90%;
+    }
+
+    .meio-fechamento{
+        width: 80vw;
     }
 
     .container-solucao{
