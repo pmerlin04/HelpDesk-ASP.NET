@@ -413,12 +413,13 @@ button#btn-atualizar:hover{
     }
 
     .detalhe-comeco-chamado p.detalhe-categoria-chamado{
-        width: 290px;
+        width: 320px;
         padding: 2px;
     }
 
     .detalhe-comeco-chamado p.detalhe-status-chamado{
         margin-right: 15px;
+        padding: 2px;
     }
 
     .detalhe-card h3{
