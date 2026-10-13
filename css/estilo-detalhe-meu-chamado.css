@@ -234,7 +234,7 @@ fieldset{
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        margin-left: 10px;
+        margin-left: 15px;
         background-color: azure;
     }
     .detalhe-container{
