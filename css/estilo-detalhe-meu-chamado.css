@@ -240,19 +240,23 @@ fieldset{
         display: flex;
         justify-content: flex-start;
         margin-top: 50px;
-        margin-left: 10px;
+        margin-left: -45px;
         background-color: red;
     }
 
     .detalhe-card{
-        width: 82vw;
+        width: 95vw;
         height: 63vh;
     }
 
     .detalhe-comeco-chamado{
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .detalhe-comeco-chamado p.detalhe-id-chamado{
+        width: 90px;
     }
 
     .detalhe-card h3{
