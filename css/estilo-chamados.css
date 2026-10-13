@@ -446,7 +446,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 60vh;
-        background-color: red;
+        /*background-color: red;*/
     }
 
     .chamados{

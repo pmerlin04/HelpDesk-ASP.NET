@@ -235,13 +235,13 @@ fieldset{
         justify-content: flex-start;
         flex-direction: column;
         margin-left: 20px;
-        background-color: azure;
+        /*background-color: azure;*/
     }
     .detalhe-container{
         display: flex;
         justify-content: flex-start;
         margin-left: -0px;
-        background-color: red;
+        /*background-color: red;*/
     }
 
     .detalhe-card{
@@ -287,9 +287,10 @@ fieldset{
 
     }
 
+    /*
     .container-solucao{
         background-color: blue;
-    }
+    }*/
 
     .solucao{
         width: 95vw;
