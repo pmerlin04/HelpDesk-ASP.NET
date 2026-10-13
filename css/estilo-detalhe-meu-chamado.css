@@ -233,12 +233,14 @@ fieldset{
     #detalhe-chamado{
         display: flex;
         justify-content: flex-start;
+        margin-left: 0px;
         background-color: azure;
     }
     .detalhe-container{
         display: flex;
         justify-content: flex-start;
         margin-top: 50px;
+        margin-left: 10px;
         background-color: red;
     }
 
