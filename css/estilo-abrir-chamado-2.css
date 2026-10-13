@@ -325,7 +325,7 @@ button#enviar-chamado:hover{
     }
 
     .chamado h1{
-        margin-left: 54px;
+        margin-left: 52px;
         font-size: 25px;
         width: 100%;
     }
@@ -342,6 +342,10 @@ button#enviar-chamado:hover{
 
     .input-categoria button{
         width: 170px;
+    }
+
+    form{
+        margin-left: -10px;
     }
 
     .imagem-direita{
