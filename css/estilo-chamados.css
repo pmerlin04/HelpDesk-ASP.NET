@@ -425,13 +425,13 @@ body{
         background-color: turquoise;
         width: 100%;
         font-weight: 600;
-        font-size: 13px;
+        font-size: 19px;
     }
 
     .status p{
         margin-right: 10px;
         margin-left: 5px;
-        font-size: 15px;
+        font-size: 19px;
     }
 
     .status ul{
@@ -445,8 +445,8 @@ body{
     .container{
         display: flex;
         flex-wrap: wrap;
-        width: 30vh;
-        height: 102vh;
+        width: 60vh;
+        background-color: red;
     }
 
     .chamados{
