@@ -376,16 +376,18 @@ button#btn-atualizar:hover{
 
     .voltar{
         margin-left: 0px;
-        background-color: red;
     }
+
     #detalhe-chamado{
         margin-left: 10px;
         background-color: azure;
     }
+
     .detalhe-container{
         display: flex;
         flex-direction: column;
         margin-left: -0px;
+        height: 110vh;
         background-color: red;
     }
 
@@ -429,7 +431,10 @@ button#btn-atualizar:hover{
     .detalhe-meio-chamado textarea{
         margin-top: 10px;
         font-size: 15px;
+    }
 
+    .form-fechamento{
+        width: 93vw;
     }
 
     .container-solucao{
