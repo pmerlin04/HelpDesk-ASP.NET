@@ -476,7 +476,7 @@ body{
         width: 100vw;
         font-size: 13px;
         margin-top: 20px;
-        background-color: blue;
+        /*background-color: blue;*/
     }
 
     #paginacao button#btn-anterior, button#btn-proximo{
