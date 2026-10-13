@@ -416,7 +416,7 @@ body{
 
     .btn-status{
         width: 77px;
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .status{
@@ -429,7 +429,8 @@ body{
     }
 
     .status p{
-        margin-right: 10px;
+        margin-right: 20px;
+        margin-left: 0px;
     }
 
     .status ul{
