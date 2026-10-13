@@ -380,7 +380,7 @@ button#btn-atualizar:hover{
 
     #detalhe-chamado{
         margin-left: 10px;
-        background-color: azure;
+        /*background-color: azure;*/
     }
 
     .detalhe-container{
@@ -388,7 +388,7 @@ button#btn-atualizar:hover{
         flex-direction: column;
         margin-left: -0px;
         height: 115vh;
-        background-color: red;
+        /*background-color: red;*/
     }
 
     .detalhe-card{
@@ -409,17 +409,17 @@ button#btn-atualizar:hover{
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
         width: 200px;
-        padding: 2px;
+        padding: 3px;
     }
 
     .detalhe-comeco-chamado p.detalhe-categoria-chamado{
         width: 320px;
-        padding: 2px;
+        padding: 3px;
     }
 
     .detalhe-comeco-chamado p.detalhe-status-chamado{
         margin-right: 15px;
-        padding: 2px;
+        padding: 3px;
     }
 
     .detalhe-card h3{
@@ -453,7 +453,7 @@ button#btn-atualizar:hover{
     .container-solucao{
         margin-left: 0px;
         margin-top: 10px;
-        background-color: blue;
+        /*background-color: blue;*/
     }
 
     .solucao{
