@@ -453,7 +453,7 @@ body{
         width: 95vw;
         margin-left: 3%;
         margin-top: 30px;
-        height: 60vh;
+        height: 65vh;
     }
 
 
@@ -466,7 +466,7 @@ body{
     }
 
     .final-chamado{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #paginacao{
