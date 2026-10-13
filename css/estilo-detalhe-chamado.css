@@ -374,16 +374,16 @@ button#btn-atualizar:hover{
 /*Responsividade*/
 @media screen and (max-width: 1000px){
 
+    .voltar{
+        margin-left: 0px;
+    }
     #detalhe-chamado{
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        margin-left: 20px;
+        margin-left: 10px;
         background-color: azure;
     }
     .detalhe-container{
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
         margin-left: -0px;
         background-color: red;
     }
@@ -432,6 +432,7 @@ button#btn-atualizar:hover{
     }
 
     .container-solucao{
+        margin-left: 0px;
         background-color: blue;
     }
 
