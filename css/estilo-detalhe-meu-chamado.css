@@ -253,7 +253,7 @@ fieldset{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        gap: 10px;
+        gap: 5px;
         margin-bottom: 10px;
     }
 
