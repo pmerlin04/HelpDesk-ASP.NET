@@ -249,10 +249,14 @@ fieldset{
         height: 63vh;
     }
 
-    .detahe-comeco-chamado{
+    .detalhe-comeco-chamado{
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+
+    .detalhe-card h3{
+        font-size: 20px;
     }
 
 }
