@@ -231,9 +231,12 @@ fieldset{
 @media screen and (max-width: 1000px){
 
     .detalhe-container{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 50px;
         background-color: red;
     }
-    
+
     .detalhe-card{
         width: 82vw;
         height: 63vh;
