@@ -178,7 +178,7 @@ function exibirChamados(chamados){
              itemChamado.innerHTML += `
             
             <div class="comeco-chamado">
-                <p class="id-chamado">TI - ${chamado.id}</p> 
+                <p class="id-chamado">ICOM - ${chamado.id}</p> 
                 <p class="categoria-chamado">${chamado.categoria}</p> 
             </div>
 
