@@ -428,37 +428,6 @@ body{
         gap: 10px;
     }
 
-    .chamado h1{
-        margin-left: 14%;
-        font-size: 25px;
-        width: 350px;
-    }
-
-    .input-container input, .input-container select{
-        width: 80vw;
-
-    }
-
-    .input-categoria{
-        display: grid;
-        grid-template-columns: 200px 200px;
-        margin-left: 17px;
-        width: 92vw;
-        height: 30vh;
-    }
-
-    .input-categoria button{
-        width: 160px;
-    }
-
-    .input-container textarea{
-        width: 80vw;
-    }
-
-    button#enviar-chamado{
-        width: 80vw;
-        margin-left: 0px;
-    }
 
     #paginacao{
         color: transparent;
