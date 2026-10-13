@@ -253,14 +253,24 @@ fieldset{
         width: 100%;
         display: flex;
         justify-content: space-around;
+        gap: 10px;
     }
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
         width: 90px;
     }
 
+    .detalhe-comeco-chamado p.detalhe-categoria-chamado{
+        width: 60%;
+    }
+
     .detalhe-card h3{
-        font-size: 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .detalhe-informacao-chamado{
+        font-size: 15px;
     }
 
 }
