@@ -431,6 +431,7 @@ body{
     .status p{
         margin-right: 10px;
         margin-left: 5px;
+        font-size: 15px;
     }
 
     .status ul{
