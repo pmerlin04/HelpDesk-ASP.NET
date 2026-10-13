@@ -413,6 +413,14 @@ body{
         height: 65vh;
     }
 
+    .comeco-chamado{
+        gap: 5px;
+    }
+
+    .comeco-chamado p.id-chamado{
+        width: 30%;
+    }
+
     .comeco-chamado p.categoria-chamado{
         width: 70%;
     }
