@@ -419,10 +419,12 @@ body{
 
     .comeco-chamado p.id-chamado{
         width: 30%;
+        font-size: 14px;
     }
 
     .comeco-chamado p.categoria-chamado{
         width: 60%;
+        font-size: 14px;
     }
 
     .meio-chamado{
