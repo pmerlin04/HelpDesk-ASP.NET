@@ -254,6 +254,7 @@ fieldset{
         display: flex;
         justify-content: space-around;
         gap: 10px;
+        margin-bottom: 10px;
     }
 
     .detalhe-comeco-chamado p.detalhe-id-chamado{
@@ -265,7 +266,7 @@ fieldset{
     }
 
     .detalhe-comeco-chamado p.detalhe-status-chamado{
-        margin-right: 20px;
+        margin-right: 15px;
     }
 
     .detalhe-card h3{
@@ -282,7 +283,7 @@ fieldset{
     .detalhe-meio-chamado textarea{
         margin-top: 10px;
         font-size: 15px;
-        
+
     }
 
 }
