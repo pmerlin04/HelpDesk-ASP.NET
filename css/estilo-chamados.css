@@ -454,12 +454,13 @@ body{
         height: 70vh;
     }
 
-    .comeco-chamado{
-        background-color: red;
-    }
 
     .comeco-chamado p.id-chamado{
-        width: 120px;
+        width: 130px;
+    }
+
+    .comeco-chamado p.categoria-chamado{
+        width: 60%;
     }
 
     #paginacao{
