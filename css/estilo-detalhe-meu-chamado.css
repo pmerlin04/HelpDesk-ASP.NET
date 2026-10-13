@@ -227,5 +227,15 @@ fieldset{
     font-size: 18px;
 }
 
+/*Responsividade*/
+@media screen and (max-width: 1000px){
+
+    .detalhe-card{
+        width: 82vw;
+        height: 63vh;
+    }
+
+}
+
 
 
