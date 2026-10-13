@@ -250,7 +250,9 @@ fieldset{
     }
 
     .detahe-comeco-chamado{
-        width: 20vw;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
     }
 
 }
