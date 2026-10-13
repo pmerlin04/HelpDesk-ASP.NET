@@ -265,7 +265,7 @@ fieldset{
     }
 
     .detalhe-comeco-chamado p.detalhe-status-chamado{
-        background-color: red;
+        margin-right: 20px;
     }
 
     .detalhe-card h3{
@@ -274,9 +274,15 @@ fieldset{
     }
 
     .detalhe-informacao-chamado{
-        font-size: 15px;
+        font-size: 12px;
         margin-top: 5px;
         gap: 10px;
+    }
+
+    .detalhe-meio-chamado textarea{
+        margin-top: 10px;
+        font-size: 15px;
+        
     }
 
 }
