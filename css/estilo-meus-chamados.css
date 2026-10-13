@@ -356,24 +356,6 @@ body{
     }
 
 
-
-    /*
-    .cabecalho-menu a#barra{
-    transform: rotate(90deg);
-    cursor: text;
-    }
-
-    .cabecalho-menu a#entrar{
-        color: #919496;
-        font-size: 24px;
-        font-weight: 600;
-        cursor: pointer;
-    }
-
-    .cabecalho-menu a#entrar:hover{
-        color: #1ed760;
-    }*/
-
     body{
         overflow-x: hidden;
         
@@ -428,7 +410,7 @@ body{
 
     .chamados{
         width: 82vw;
-        height: 65vh;
+        height: 55vh;
     }
 
     .comeco-chamado p.categoria-chamado{
