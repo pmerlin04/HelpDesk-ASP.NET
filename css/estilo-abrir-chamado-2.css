@@ -338,10 +338,20 @@ button#enviar-chamado:hover{
         display: grid;
         grid-template-columns: 200px 200px;
         height: 250px;
+        margin-left: 20px;
     }
 
     .input-categoria button{
         width: 170px;
+    }
+
+    .input-container textarea{
+        width: 85vw;
+    }
+
+    button#enviar-chamado{
+        width: 85vw;
+        margin-left: 0px;
     }
 
     form{
