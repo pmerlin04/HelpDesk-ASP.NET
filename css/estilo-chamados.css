@@ -473,6 +473,9 @@ body{
     }
 
     #paginacao{
+        width: 95vw;
+        font-size: 17px;
+        margin-top: 20px;
         background-color: blue;
     }
 
