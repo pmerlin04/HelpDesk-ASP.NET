@@ -387,7 +387,7 @@ button#btn-atualizar:hover{
         display: flex;
         flex-direction: column;
         margin-left: -0px;
-        height: 110vh;
+        height: 115vh;
         background-color: red;
     }
 
@@ -437,7 +437,7 @@ button#btn-atualizar:hover{
     }
 
     .form-fechamento{
-        width: 93vw;
+        width: 95vw;
     }
 
     .linha-fechamento{
@@ -450,6 +450,7 @@ button#btn-atualizar:hover{
 
     .container-solucao{
         margin-left: 0px;
+        margin-top: 10px;
         background-color: blue;
     }
 
