@@ -240,7 +240,6 @@ fieldset{
     .detalhe-container{
         display: flex;
         justify-content: flex-start;
-        margin-top: 50px;
         margin-left: -0px;
         background-color: red;
     }
@@ -286,6 +285,10 @@ fieldset{
         margin-top: 10px;
         font-size: 15px;
 
+    }
+
+    .container-solucao{
+        background-color: blue;
     }
 
 }
