@@ -376,6 +376,7 @@ button#btn-atualizar:hover{
 
     .voltar{
         margin-left: 0px;
+        background-color: red;
     }
     #detalhe-chamado{
         margin-left: 10px;
