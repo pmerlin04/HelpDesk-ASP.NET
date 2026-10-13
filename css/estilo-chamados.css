@@ -469,11 +469,11 @@ body{
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 14px;
+        font-size: 15px;
     }
 
     #paginacao{
-        background-color: transparent;
+        background-color: blue;
     }
 
     
